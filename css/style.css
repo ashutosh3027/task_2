@@ -1,0 +1,175 @@
+body {
+    background-color: black;
+    cursor: auto;
+    font-size: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar li {
+    float: right;
+
+}
+
+.navbar li a {
+    font-size: 2.5em;
+    font-weight: bolder;
+    display: block;
+    color: rgb(19, 247, 210, 1);
+    text-align: center;
+    margin: 10px;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.container {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#img {
+    display: block;
+    position: relative;
+    right: 4%;
+}
+
+#log {
+    display: block;
+    position: absolute;
+    top: 3%;
+    left: 2%;
+
+    /* border: 2px  solid red; */
+    height: 12vh;
+    width: 6vw;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+#img {
+    max-width: 25vw;
+    height: auto;
+}
+
+#l1 {
+    font-family: Mon;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#l2 {
+
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#heading {
+    color: rgb(19, 247, 210, 1);
+    font-size: 50px;
+    font-weight: bolder;
+    font-size: 5em;
+    letter-spacing: 0.09em;
+    font-family: 'Montserrat', sans-serif;
+    font-style: medium;
+}
+
+.icon {
+    color: black;
+    float: right;
+    position: relative;
+    right: 2%;
+    font-size: 24px;
+    line-height: 40px;
+    cursor: pointer;
+    display: none;
+}
+button{
+    display: flex;
+    top: 10px;
+     background-color:white;
+}
+
+@media (max-width:700px) {
+    .icon {
+        display: block;
+    }
+
+    #nav1 {
+
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 10px;
+        left: -100%;
+    }
+    #nav1:active{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 10px;
+        left: 0%;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column-reverse;
+        position: absolute;
+        top: 4%;
+        right: 2.5%;
+
+    }
+
+    header nav ul li a {
+        
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+}
+.div2{
+    
+    position: relative;
+    top: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+#bicon{
+      position: absolute;
+      
+}
+a:visited{
+    color:rgb(19, 247, 210, 1) ;
+    
+}
+.eicon{
+    font-size: 25px;
+    color: rgb(19, 247, 210, 1);
+    margin: 0.7%;
+    border-radius: 50%;
+}
