@@ -2,6 +2,8 @@ body {
     background-color: black;
     cursor: auto;
     font-size: 10px;
+
+
 }
 
 .navbar ul {
@@ -9,7 +11,7 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    
+    /* background-color: rgb(23 78 164);       */
 }
 
 .navbar li {
@@ -40,21 +42,40 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
-#img {
-    display: block;
+.forcircle {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    z-index: 1;
+   
+
+}
+
+.circle {   
+    height: 372px;
+    width: 372px;
+    border-radius: 50%;
+}
+
+#circle {
     position: relative;
-    right: 4%;
+    top:  60%;
+    left: 15%; 
+    max-width: 25%;
+    height: 55%;
+    background-color: rgb(19, 247, 210, 1);
+    opacity: 0.5;
+    z-index: 2;
 }
-
 #log {
     display: block;
     position: absolute;
     top: 3%;
     left: 2%;
-
-    /* border: 2px  solid red; */
     height: 12vh;
     width: 6vw;
 }
@@ -98,6 +119,24 @@ img {
     font-style: medium;
 }
 
+header::before {
+    background-image: url("img3.png");
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -30;
+    opacity: 0.5;
+
+}
+
 .icon {
     color: black;
     float: right;
@@ -108,11 +147,14 @@ img {
     cursor: pointer;
     display: none;
 }
-button{
+
+button {
     display: flex;
     top: 10px;
-     background-color:white;
+    background-color: white;
 }
+
+
 
 @media (max-width:700px) {
     .icon {
@@ -127,7 +169,9 @@ button{
         top: 10px;
         left: -100%;
     }
-    #nav1:active{
+  
+
+    #nav1:active {
         position: absolute;
         width: 100vw;
         height: 100vh;
@@ -145,31 +189,38 @@ button{
     }
 
     header nav ul li a {
-        
+        background-color: rgb(190, 192, 45);
         border-bottom: 1px solid rgb(255, 255, 255);
     }
 }
-.div2{
-    
+
+.div2 {
+
     position: relative;
-    top: 16vh;
+    top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 
-    
+
 }
-#bicon{
-      position: absolute;
-      
+
+#bicon {
+    position: absolute;
+    z-index: 1;
+
 }
-a:visited{
-    color:rgb(19, 247, 210, 1) ;
-    
+
+a:visited {
+    color: rgb(19, 247, 210, 1);
+    z-index: 1;
 }
-.eicon{
+
+.eicon {
     font-size: 25px;
     color: rgb(19, 247, 210, 1);
-    margin: 0.7%;
+    margin-left: 0.7%;
     border-radius: 50%;
+    z-index: 1;
 }
